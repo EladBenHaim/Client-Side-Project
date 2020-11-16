@@ -1,0 +1,651 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>שלמה רביב - עובדים בשבילך</title>
+    <!-- Bootstrap core CSS -->
+    <link rel="shortcut icon" href="ravivlogoicon.ico" />
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom fonts for this template -->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/grayscale.css" rel="stylesheet">
+    <link href="css/animation.css" rel='stylesheet' id='pojo-style-rtl-css' type='text/css' media='all' />
+    <script type="text/javascript">
+        var checkhideh5 = 0;
+        function myFunction1() {
+            var x = document.getElementById("myDIV1");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+                document.getElementById("myDIV2").style.display = "none";
+                document.getElementById("myDIV3").style.display = "none";
+                document.getElementById("myDIV4").style.display = "none";
+                document.getElementById("myDIV5").style.display = "none";
+            } else {
+                x.style.display = "none";
+            }
+
+        }
+
+        function myFunction2() {
+            var x = document.getElementById("myDIV2");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+                document.getElementById("myDIV1").style.display = "none";
+                document.getElementById("myDIV3").style.display = "none";
+                document.getElementById("myDIV4").style.display = "none";
+                document.getElementById("myDIV5").style.display = "none";
+            } else {
+                x.style.display = "none";
+            }
+        }
+
+        function myFunction3() {
+            var x = document.getElementById("myDIV3");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+                document.getElementById("myDIV2").style.display = "none";
+                document.getElementById("myDIV1").style.display = "none";
+                document.getElementById("myDIV4").style.display = "none";
+                document.getElementById("myDIV5").style.display = "none";
+            } else {
+                x.style.display = "none";
+            }
+        }
+        function myFunction4() {
+            var x = document.getElementById("myDIV4");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+                document.getElementById("myDIV2").style.display = "none";
+                document.getElementById("myDIV3").style.display = "none";
+                document.getElementById("myDIV1").style.display = "none";
+                document.getElementById("myDIV5").style.display = "none";
+            } else {
+                x.style.display = "none";
+            }
+        }
+        function myFunction5() {
+            var x = document.getElementById("myDIV5");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+                document.getElementById("myDIV2").style.display = "none";
+                document.getElementById("myDIV3").style.display = "none";
+                document.getElementById("myDIV4").style.display = "none";
+                document.getElementById("myDIV1").style.display = "none";
+            } else {
+                x.style.display = "none";
+            }
+        }
+
+        function hideh5() {
+            if (checkhideh5 == 0) {
+                var x = document.getElementById("thisish5");
+                var y = document.getElementById("thisish52");
+                var z = document.getElementById("thisish2");
+                var t = document.getElementById("showContent");
+                var r = document.getElementById("hideContent");
+                x.style.display = "none";
+                y.style.display = "none";
+                z.style.display = "none";
+                t.style.display = "block";
+                r.style.display = "none";
+                checkhideh5 = 1;
+                return;
+            }
+            if (checkhideh5 == 1) {
+                var x = document.getElementById("thisish5");
+                var y = document.getElementById("thisish52");
+                var z = document.getElementById("thisish2");
+                var t = document.getElementById("showContent");
+                var r = document.getElementById("hideContent");
+                x.style.display = "block";
+                y.style.display = "block";
+                z.style.display = "block";
+                t.style.display = "none";
+                r.style.display = "block";
+                checkhideh5 = 0;
+                return;
+            }
+        }
+        var n = 5, i = 1;
+        function changeImageUp() {
+            if (n == 5) {
+                document.getElementById("about").style += ';background: linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.5) 75%, #161616 100%), url(img/images/ahimeir/1.jpg);direction:ltr;background-position: center;background-repeat: no-repeat;padding-top:165px;padding-bottom:0px;height:690px;background-size:cover;';
+                document.getElementById("dot1").className = "dot active";
+                for (i = 2; i <= 5; i++) {
+                    document.getElementById("dot" + i).className = "dot";
+                }
+                n = 1;
+            }
+            else {
+                n++;
+                document.getElementById("dot1").className = "dot";
+                document.getElementById("about").style += ';background: linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.5) 75%, #161616 100%), url(img/images/ahimeir/' + n + '.jpg);direction:ltr;background-position: center;background-repeat: no-repeat;padding-top:165px;padding-bottom:0px;height:690px;background-size:cover;';
+                document.getElementById("dot" + n).className = "dot active";
+                document.getElementById("dot" + (n - 1)).className = "dot";
+            }
+        }
+        function changeImageDown() {
+            if (n == 1) {
+                document.getElementById("about").style += ';background: linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.5) 75%, #161616 100%), url(img/images/ahimeir/5.jpg);direction:ltr;background-position: center;background-repeat: no-repeat;padding-top:165px;padding-bottom:0px;height:690px;background-size:cover;';
+                document.getElementById("dot5").className = "dot active";
+                for (i = 4; i >= 1; i--) {
+                    document.getElementById("dot" + i).className = "dot";
+                }
+                n = 5;
+            }
+            else {
+                n--;
+                document.getElementById("dot5").className = "dot";
+                document.getElementById("about").style += ';background: linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.5) 75%, #161616 100%), url(img/images/ahimeir/' + n + '.jpg);direction:ltr;background-position: center;background-repeat: no-repeat;padding-top:165px;padding-bottom:0px;height:690px;background-size:cover;';
+                document.getElementById("dot" + n).className = "dot active";
+                document.getElementById("dot" + (n + 1)).className = "dot";
+            }
+        }
+    </script>
+</head>
+
+<body id="page-top">
+
+    <script type="text/javascript">
+        window.onload = function () {
+            document.getElementById('myDIV1').style.display = 'none';
+            document.getElementById('myDIV2').style.display = 'none';
+            document.getElementById('myDIV3').style.display = 'none';
+            document.getElementById('myDIV4').style.display = 'none';
+            document.getElementById('myDIV5').style.display = 'none';
+            document.getElementById('showContent').style.display = 'none';
+            document.getElementById('thisish52').style.display = 'none';
+            document.getElementById('thisish5').style.display = 'block';
+            document.getElementById('thisish2').style.display = 'none';
+        }
+
+    </script>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+        <div class="container">
+            <button id="isMenu" class="navbar-toggler navbar-toggler-left" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                תפריט
+                <i class="fas fa-bars"></i>
+            </button>
+            <a id="logo"class="navbar-brand js-scroll-trigger" href="#page-top"><img id="optionalstuff" src="ravivlogo.png"></a>
+            <div class="collapse navbar-collapse" id="navbarResponsive" style="direction:rtl;float:right">
+                <ul class="navbar-nav ml-auto" style="direction:rtl;float:right;">
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#about">אודות</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#projects">התחדשות עירונית</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#questAns">שאלות ותשובות</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#signup">צור קשר</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Header -->
+
+    <header class="masthead">
+        <div class="overlay"></div>
+        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+            <source src="img/images/tlv.mp4" type="video/mp4">
+        </video>
+        <div class="container h-100">
+            <div class="d-flex h-100 text-center align-items-center">
+                <div class="w-100 text-white">
+                    <h1 class="display-3">שלמה רביב</h1>
+                    <h2 class="text-white-50 mx-auto mt-2 mb-5">עובדים בשבילך</h2>
+                    <a href="#about" class="btn btn-primary js-scroll-trigger">פתיחה</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="about-section text-center" style="padding-top:165px;padding-bottom:30px;">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="col-lg-12 mx-auto" style="margin-top:-100px;">
+                        <!-- The dots/circles -->
+                        <div class="col-md-12" style="text-align:center">
+                            <span class="next" onclick="changeImageDown()">&#10094;</span>
+                            <span class="dot" id="dot1"></span>
+                            <span class="dot" id="dot2"></span>
+                            <span class="dot" id="dot3"></span>
+                            <span class="dot" id="dot4"></span>
+                            <span class="dot" id="dot5"></span>
+                            <span class="prev" onclick="changeImageUp()">&#10095;</span>
+                        </div>
+                        <div id="showContent" class="col-md-12 text-center button_cont" align="center"><button class="example_d" onclick="hideh5()">הצג תוכן</button></div>
+                        <div id="hideContent" class="button_cont" align="center"><button class="example_d" onclick="hideh5()">הסתר תוכן</button></div>
+                        <h2 id="thisish2" class="text-white mb-4"></h2>
+                        <h5 id="thisish5" style="direction:rtl;display:block;background: linear-gradient(to bottom, rgba(0.3, 0.3, 0.3, 0.3) 60%, #161616 100%);border-radius:25px">
+                            <br />
+                            מעוניינים לקדם פרויקט תמ"א 38 או תכנית פינוי בינוי ולא יודעים איך להתחיל?<br /><br />
+                            רוצים להבטיח לעצמכם את התמורות המקסימליות?<br /><br />
+                            מעוניינים לקבל השוואת יזמים רצינית ולא להתפשר על יזם?<br /><br />
+                            שואלים את עצמכם איך עושים זאת ללא השקעה כספית וללא מאמץ מיותר?<br /><br />
+                            בשביל זה הקמנו את חברת "שלמה רביב", כי ניהול פרויקטים של התחדשות עירונית זה מקצוע, והגיע הזמן שהיזמים יעבדו למענכם ולא להפך
+                        </h5>
+                    </div>
+                    <div class="col-lg-12 mx-auto">
+                        <h5 id="thisish52" style="direction:rtl">
+                        </h5>
+                    </div>
+                </div>
+            </div>
+            <br>
+        </div>
+    </section>
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section bg-light" style="padding-top:7.5%;margin-top:0px">
+        <div class="container" style="padding:0;margin-top:0px;margin-bottom:-200px;">
+            <div class="row mb-4 mb-lg-5">
+                <div id="ahi1" class='ahi col-md-6 effect-layla' style="padding-left:0px;background:none;display:block">
+                    <img src="img\images\ahimeir\1.jpg" alt="">
+                    <figcaption onmouseenter="clearTimeout(t1)" onmouseleave="showSlides_ahi()">
+                        <h3 style="line-height:16px">
+                            <font style="font-family:Arial;font-size:14px;">
+                                <u><b>פרוייקט אחי מאיר-שלב בתכנון</u></b><br />
+                            </font>
+                            <font style="font-size:11px;font-family:Arial;">
+                                <b>
+                                    ההצלחה הכבירה של חברת "שלמה רביב" באה לביטוי שוב והפעם בלוקיישן הכי יוקרתי בתל אביב.
+                                    הפרויקט הייחודי כולל הריסה של 144 דירות אשר במקומן יקומו 3 מגדלים בני 18 קומות ובהן 312 דירות מפוארות. הבניינים החדשים מעוצבים בסטנדרט גבוה וכוללים חניה תת קרקעית, חדר כושר, בריכת שחיה ולובאים עם שירות שמירה 24/7
+                                    לאחר שינוים  רבים נחתם חוזה דקדקני ובו החברה דאגה להגן על הדיירים בכל פרמטר ע"י הוספת סעיפים ייחודיים לחוזה המטיבים עם הדיירים בצורה משמעותית.
+                                    הלווי המקצועי שלנו הוא זה שמאפשר לדיירים להגן על זכויותיהם, לקצר את זמן הפרויקט ולקבל את תמורה הטובה ביותר !
+                                </b>
+                            </font>
+                        </h3>
+                        <h4></h4>
+                        <a href="https://www.google.com/maps?ll=32.124779,34.798749&z=13&t=m&hl=en-US&gl=US&mapclient=embed&q=Aba+Akhime%27ir+St+4+Tel+Aviv-Yafo" target="_blank"></a>
+                    </figcaption>
+                </div>
+                <div id="ahi2" class='col-md-6 effect-layla' style="background:none;display:none">
+                    <img src="img\images\ahimeir\2.jpg" alt="">
+                    <figcaption onmouseenter="clearTimeout(t1)" onmouseleave="showSlides_ahi()">
+                        <h3 style="line-height:16px">
+                            <font style="font-family:Arial;font-size:14px;">
+                                <u><b>פרוייקט אחי מאיר-שלב בתכנון</u></b><br />
+                            </font>
+                            <font style="font-size:11px;font-family:Arial;">
+                                <b>
+                                    ההצלחה הכבירה של חברת "שלמה רביב" באה לביטוי שוב והפעם בלוקיישן הכי יוקרתי בתל אביב.
+                                    הפרויקט הייחודי כולל הריסה של 144 דירות אשר במקומן יקומו 3 מגדלים בני 18 קומות ובהן 312 דירות מפוארות. הבניינים החדשים מעוצבים בסטנדרט גבוה וכוללים חניה תת קרקעית, חדר כושר, בריכת שחיה ולובאים עם שירות שמירה 24/7
+                                    לאחר שינוים  רבים נחתם חוזה דקדקני ובו החברה דאגה להגן על הדיירים בכל פרמטר ע"י הוספת סעיפים ייחודיים לחוזה המטיבים עם הדיירים בצורה משמעותית.
+                                    הלווי המקצועי שלנו הוא זה שמאפשר לדיירים להגן על זכויותיהם, לקצר את זמן הפרויקט ולקבל את תמורה הטובה ביותר !
+                                </b>
+                            </font>
+                        </h3>
+                        <h4></h4>
+                        <a href="https://www.google.com/maps?ll=32.124779,34.798749&z=13&t=m&hl=en-US&gl=US&mapclient=embed&q=Aba+Akhime%27ir+St+4+Tel+Aviv-Yafo" target="_blank"></a>
+                    </figcaption>
+                </div>
+                <div id="ahi3" class='col-md-6 effect-layla' style="background:none;display:none">
+                    <img src="img\images\ahimeir\3.jpg" alt="">
+                    <figcaption onmouseenter="clearTimeout(t1)" onmouseleave="showSlides_ahi()">
+                        <h3 style="line-height:16px">
+                            <font style="font-family:Arial;font-size:14px;">
+                                <u><b>פרוייקט אחי מאיר-שלב בתכנון</u></b><br />
+                            </font>
+                            <font style="font-size:11px;font-family:Arial;">
+                                <b>
+                                    ההצלחה הכבירה של חברת "שלמה רביב" באה לביטוי שוב והפעם בלוקיישן הכי יוקרתי בתל אביב.
+                                    הפרויקט הייחודי כולל הריסה של 144 דירות אשר במקומן יקומו 3 מגדלים בני 18 קומות ובהן 312 דירות מפוארות. הבניינים החדשים מעוצבים בסטנדרט גבוה וכוללים חניה תת קרקעית, חדר כושר, בריכת שחיה ולובאים עם שירות שמירה 24/7
+                                    לאחר שינוים  רבים נחתם חוזה דקדקני ובו החברה דאגה להגן על הדיירים בכל פרמטר ע"י הוספת סעיפים ייחודיים לחוזה המטיבים עם הדיירים בצורה משמעותית.
+                                    הלווי המקצועי שלנו הוא זה שמאפשר לדיירים להגן על זכויותיהם, לקצר את זמן הפרויקט ולקבל את תמורה הטובה ביותר !
+                                </b>
+                            </font>
+                        </h3>
+                        <h4></h4>
+                        <a href="https://www.google.com/maps?ll=32.124779,34.798749&z=13&t=m&hl=en-US&gl=US&mapclient=embed&q=Aba+Akhime%27ir+St+4+Tel+Aviv-Yafo" target="_blank"></a>
+                    </figcaption>
+                </div>
+                <div id="ahi4" class='col-md-6 effect-layla' style="background:none;display:none">
+                    <img src="img\images\ahimeir\4.jpg" alt="">
+                    <figcaption onmouseenter="clearTimeout(t1)" onmouseleave="showSlides_ahi()">
+                        <h3 style="line-height:16px">
+                            <font style="font-family:Arial;font-size:14px;">
+                                <u><b>פרוייקט אחי מאיר-שלב בתכנון</u></b><br />
+                            </font>
+                            <font style="font-size:11px;font-family:Arial;">
+                                <b>
+                                    ההצלחה הכבירה של חברת "שלמה רביב" באה לביטוי שוב והפעם בלוקיישן הכי יוקרתי בתל אביב.
+                                    הפרויקט הייחודי כולל הריסה של 144 דירות אשר במקומן יקומו 3 מגדלים בני 18 קומות ובהן 312 דירות מפוארות. הבניינים החדשים מעוצבים בסטנדרט גבוה וכוללים חניה תת קרקעית, חדר כושר, בריכת שחיה ולובאים עם שירות שמירה 24/7
+                                    לאחר שינוים  רבים נחתם חוזה דקדקני ובו החברה דאגה להגן על הדיירים בכל פרמטר ע"י הוספת סעיפים ייחודיים לחוזה המטיבים עם הדיירים בצורה משמעותית.
+                                    הלווי המקצועי שלנו הוא זה שמאפשר לדיירים להגן על זכויותיהם, לקצר את זמן הפרויקט ולקבל את תמורה הטובה ביותר !
+                                </b>
+                            </font>
+                        </h3>
+                        <h4></h4>
+                        <a href="https://www.google.com/maps?ll=32.124779,34.798749&z=13&t=m&hl=en-US&gl=US&mapclient=embed&q=Aba+Akhime%27ir+St+4+Tel+Aviv-Yafo" target="_blank"></a>
+                    </figcaption>
+                </div>
+                <div id="ahi5" class='col-md-6 effect-layla' style="background:none;display:none">
+                    <img src="img\images\ahimeir\5.jpg" alt="">
+                    <figcaption onmouseenter="clearTimeout(t1)" onmouseleave="showSlides_ahi()">
+                        <h3 style="line-height:16px">
+                            <font style="font-family:Arial;font-size:14px;">
+                                <u><b>פרוייקט אחי מאיר-שלב בתכנון</u></b><br />
+                            </font>
+                            <font style="font-size:11px;font-family:Arial;">
+                                <b>
+                                    ההצלחה הכבירה של חברת "שלמה רביב" באה לביטוי שוב והפעם בלוקיישן הכי יוקרתי בתל אביב.
+                                    הפרויקט הייחודי כולל הריסה של 144 דירות אשר במקומן יקומו 3 מגדלים בני 18 קומות ובהן 312 דירות מפוארות. הבניינים החדשים מעוצבים בסטנדרט גבוה וכוללים חניה תת קרקעית, חדר כושר, בריכת שחיה ולובאים עם שירות שמירה 24/7
+                                    לאחר שינוים  רבים נחתם חוזה דקדקני ובו החברה דאגה להגן על הדיירים בכל פרמטר ע"י הוספת סעיפים ייחודיים לחוזה המטיבים עם הדיירים בצורה משמעותית.
+                                    הלווי המקצועי שלנו הוא זה שמאפשר לדיירים להגן על זכויותיהם, לקצר את זמן הפרויקט ולקבל את תמורה הטובה ביותר !
+                                </b>
+                            </font>
+                        </h3>
+                        <h4></h4>
+                        <a href="https://www.google.com/maps?ll=32.124779,34.798749&z=13&t=m&hl=en-US&gl=US&mapclient=embed&q=Aba+Akhime%27ir+St+4+Tel+Aviv-Yafo" target="_blank"></a>
+                    </figcaption>
+                </div>
+                <script>
+                    var slideIndex = 0;
+                    var t1;
+                    showSlides_ahi();
+                    function showSlides_ahi() {
+                      var i;
+                        for (i = 0; i < 5; i++) {
+                            document.getElementById('ahi'+(i+1)).style.display = "none";
+                      }
+                      slideIndex++;
+                      if (slideIndex > 5) {slideIndex = 1}
+                      document.getElementById('ahi'+slideIndex).style.display = "block";
+                      t1 = setTimeout(showSlides_ahi, 2000); // Change image every 2 seconds
+                    }
+                </script>
+                <div class='col-md-6 effect-layla' style="padding-right:0px;background:none;">
+                    <img src="img/images/weizman3.jpg" alt="">
+                    <figcaption>
+                        <h3 style="line-height:18px">
+                            <font style="font-family:Arial;font-size:14px;">
+                                <u><b>פרויקט ויצמן, יהוד (בשלב התכנון)<br /></b></u>
+                            </font>
+                            <font style="font-size:11px;font-family:Arial;">
+                                <b>
+                                    כחלק מההתחדשות העוצמתית שחווה יהוד בשנים האחרונות הולכים להבנות בפרויקט פנוי בינוי גדול  דירות  יוקרה בארבעה מגדלים הכוללים: מתחם מסחרי, פארק, שבילי אופניים ועוד.
+                                    הדיירים בשיתוף עם חברות שונות ניסו לקדם את הפרויקט למעלה מ- 15 שנים אך ללא הצלחה.
+                                    בשנים האחרונות חברת "שלמה רביב" המתמקצעת בניהול פרויקט מן הסוג הזה, נבחרה לנהל את הפרויקט. החברה יזמה את הפרויקט ואף מלווה את הדיירים לאורך כל התהליך, והינה אחראית לקדם את בקשות הדיירים מול היזם ולדאוג להתאמת הצרכים המיוחדים בפרויקט.
+                            </font>
+                        </h3>
+                        <h4></h4>
+                        <a href="https://www.google.com/maps/place/Aba+Akhime'ir+St+4,+Tel+Aviv-Yafo,+Israel/@32.124888,34.7964959,17z/data=!4m5!3m4!1s0x151d496ad9cb9eed:0x63757fbc7bf1be35!8m2!3d32.1247794!4d34.7987491?hl=en-US" target="_blank"></a>
+                    </figcaption>
+                </div>
+                <div class="row mb-4 mb-lg-5" style="background:none;">
+                    <div class='col-md-6 effect-layla' style="background:none;">
+                        <img src="img/images/ashkenazi1.jpg" alt="" style="position:relative;">
+                        <figcaption>
+                            <h3 style="line-height:25px">
+                                <font style="font-family:Arial;font-size:14px;">
+                                    <u> <b>פרויקט אשכנזי, יהוד (בשלב התכנון)</b></u><br />
+                                </font>
+                                <font style="font-size:11px;font-family:Arial;">
+                                    <b>
+                                        הבחירה הנכונה, בחברת "שלמה רביב" לנהל את פרויקט אשכנזי ביהוד הובילה להישג אדיר ולבניית ארבע מגדלי יוקרה הכוללים דירות אקסקלוסיביות, בעלי מפרט עשיר שאין דומה לו
+                                        .בעלי הזכויות ייהנו מהטבות ייחודיות אודות למומחיות החברה בפרויקטים מן הסוג הזה
+                                        בעזרת שיתוף הפעולה מצד נציגות הדיירים, הצלחנו להאיץ תהליכים ודאגנו לקדם דרישות מהותיות של בעלי הזכויות.
+                                    </b>
+                                </font>
+                            </h3>
+                            <h4></h4>
+                            <a href="https://www.google.com/maps/place/Ashkenazi+compound/@32.029204,34.890236,13z/data=!4m5!3m4!1s0x151d350e8ec5b8b9:0xc0014dadd2b2538f!8m2!3d32.0296584!4d34.8909242?hl=en-US" target="_blank"></a>
+                        </figcaption>
+                    </div>
+                    <div id="hahil1" class='col-md-6 effect-layla' style="background:none;">
+                        <img src="img/images/hahil1.jpg" alt="">
+                        <figcaption onmouseenter="clearTimeout(t2)" onmouseleave="showSlides_hahil()">
+                            <h3 style="line-height:25px">
+                                <font style="font-family:Arial;font-size:14px;">
+                                    <u><b>פרויקט החיל, תל אביב (בשלב ההתארגנות)</b></u><br />
+                                </font>
+                                <font style="font-size:11px;font-family:Arial;">
+                                    <b>
+                                        פרויקט החיל, תל אביב (בשלב ההתארגנות)<br />
+                                        פרויקט חדש שכרגע נמצא בתהליך ההתארגנות יוצא לדרך בזמן הקרוב.
+                                        החברה בשיתוף נציגות הדיירים דואגת לקיים השוואת יזמים אשר תוביל למיקסום זכויות התמורה של הדיירים ולהקמת מבנים בעלי תכנון יוקרתי יוצא דופן.
+                                        ולאחר מכן תדאג ללוות את בעלי הזכויות בתהליך עד סופו.
+                                    </b>
+                                </font>
+                            </h3>
+                            <h4></h4>
+                            <a href="https://www.google.com/maps/place/Sderot+HaHayil+11,+Tel+Aviv-Yafo,+Israel/@32.056761,34.793151,13z/data=!4m5!3m4!1s0x151d4b6d9cb7d95b:0xfad95d57c574a8f4!8m2!3d32.0567615!4d34.7931507?hl=en-US" target="_blank"></a>
+                        </figcaption>
+                    </div>
+                    <div id="hahil2" class='col-md-6 effect-layla' style="background:none;display:none">
+                        <img src="img/images/hahil2.jpg" alt="">
+                        <figcaption onmouseenter="clearTimeout(t2)" onmouseleave="showSlides_hahil()">
+                            <h3 style="line-height:25px">
+                                <font style="font-family:Arial;font-size:14px;">
+                                    <u><b>פרויקט החיל, תל אביב (בשלב ההתארגנות)</b></u><br />
+                                </font>
+                                <font style="font-size:11px;font-family:Arial;">
+                                    <b>
+                                        פרויקט החיל, תל אביב (בשלב ההתארגנות)<br />
+                                        פרויקט חדש שכרגע נמצא בתהליך ההתארגנות יוצא לדרך בזמן הקרוב.
+                                        החברה בשיתוף נציגות הדיירים דואגת לקיים השוואת יזמים אשר תוביל למיקסום זכויות התמורה של הדיירים ולהקמת מבנים בעלי תכנון יוקרתי יוצא דופן.
+                                        ולאחר מכן תדאג ללוות את בעלי הזכויות בתהליך עד סופו.
+                                    </b>
+                                </font>
+                            </h3>
+                            <h4></h4>
+                            <a href="https://www.google.com/maps/place/Sderot+HaHayil+11,+Tel+Aviv-Yafo,+Israel/@32.056761,34.793151,13z/data=!4m5!3m4!1s0x151d4b6d9cb7d95b:0xfad95d57c574a8f4!8m2!3d32.0567615!4d34.7931507?hl=en-US" target="_blank"></a>
+                        </figcaption>
+                    </div>
+                    <script>
+                        var slideIndex2 = 0;
+                        var t2;
+                        showSlides_hahil();
+                        function showSlides_hahil() {
+                            var i;
+                            for (i = 0; i < 2; i++) {
+                                document.getElementById('hahil' + (i + 1)).style.display = "none";
+                            }
+                            slideIndex2++;
+                            if (slideIndex2 > 2) { slideIndex2 = 1 }
+                            document.getElementById('hahil' + slideIndex2).style.display = "block";
+                            t2 = setTimeout(showSlides_hahil, 2200); // Change image every 2.2 seconds
+                        }
+                    </script>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Question and Answers Section -->
+    <section id="questAns" class="questAns-section">
+        <div class="container" style="margin-right:0px;padding-right:60px">
+            <div class="col-md-12">
+                <div class="input-group input-number-group row">
+                    <div class="input-group-button" onclick="myFunction1()" style="font-family:Arial;font-size:30px;">
+                        <span onmouseover="this.style.background = '#6495ED'" onmouseout="this.style.background='#B0C4DE'" class="input-number-increment" style="background-color:#B0C4DE;color:white;border-radius:10px;">+</span>
+                        <span style="background-color:none;color:white;border-radius:10px;font-family:Arial;font-size:30px; -webkit-text-fill-color: white;-webkit-text-stroke: 1.9px black;"> למה אני צריך חברת ניהול?</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div id="myDIV1" style="font-family:Arial;font-size:18px;padding-right:60px;background: linear-gradient(to bottom, rgba(0.3, 0.3, 0.3, 0.3) 100%, #161616 100%);border-radius:10px;">
+                        <span style="cbackground-color:none;color:black;font-family:Arial;font-size:22px;-webkit-text-fill-color: white;-webkit-text-stroke: 1.2px black;"> על מנת לקדם תהליך פינוי בינוי/ תמ"א 38/2 בצורה המקצועית ביותר חייב להיות גורם חיצוני ("חברת ניהול") אשר ייצג בנאמנות את הדיירים אל מול יזם. חברת ניהול דואגת לאינטרס שלכם, בעלי הזכויות, ולא ליזם שמטרתו העיקרית היא רווחיות הפרויקט. </span>
+                    </div>
+                </div>
+                <div class="row" style="height:40px">
+                </div>
+                <div class="input-group input-number-group row">
+                    <div class="input-group-button" onclick="myFunction2()" style="font-family:Arial;font-size:30px;">
+                        <span onmouseover="this.style.background='#6495ED'" onmouseout="this.style.background='#B0C4DE'" class="input-number-increment" style="background-color:#B0C4DE;color:white;border-radius:10px;">+</span>
+                    </div>
+                    <div style="color:black;border-radius:10px;font-family:Arial;font-size:24px;">
+                        <span style="font-family:Arial;background-color:none;border-radius:10px;font-size:30px;-webkit-text-fill-color: white;-webkit-text-stroke: 1.9px black;">יש מנהל פרויקטים מטעם היזם, למה בכל זאת כדאי?</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div id="myDIV2" style="font-family:Arial;font-size:18px;padding-right:60px;background: linear-gradient(to bottom, rgba(0.3, 0.3, 0.3, 0.3) 100%, #161616 100%);border-radius:10px;">
+                        <span style="background-color:none;color:black;font-family:Arial;font-size:22px;-webkit-text-fill-color: white;-webkit-text-stroke: 1.2px black;"> החברה מקבלת מהיזם שכ"ט מקובל "על חשבון" מנהל הפרויקטים של היזם. ככה שהרווח של הדיירים לא נפגע בשום מקרה, להפך החברה אחראית למיקסום הרווח.  לכן , במקום שמנהל הפרויקטים מטעם היזם ידאג לתמורות היזם, החברה מגנה על בעלי הזכויות ושואפת להשיג את התמורות הטובות ביותר לדיירים. </span>
+                    </div>
+                </div>
+                <div class="row" style="height:40px">
+                </div>
+                <div class="input-group input-number-group row">
+                    <div class="input-group-button" onclick="myFunction3()" style="font-family:Arial;font-size:30px">
+                        <span onmouseover="this.style.background='#6495ED'" onmouseout="this.style.background='#B0C4DE'" class="input-number-increment" style="background-color:#B0C4DE;color:white;border-radius:10px;">+</span>
+                    </div>
+                    <div style="color:black;border-radius:10px;font-family:Ariral;font-size:18px;">
+                        <span style="font-family:Arial;background-color:none;border-radius:10px;font-size:30px;-webkit-text-fill-color: white;-webkit-text-stroke: 1.9px black;">האם ללא חברת ניהול הכוח נמצא אצל היזם?</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div id="myDIV3" style="font-family:Arial;font-size:18px;padding-right:60px;background: linear-gradient(to bottom, rgba(0.3, 0.3, 0.3, 0.3) 100%, #161616 100%);border-radius:10px;">
+                        <span style="background-color:none;color:black;font-family:Arial;font-size:22px;-webkit-text-fill-color: white;-webkit-text-stroke: 1.2px black;">  חשוב לציין שלאורך כל התהליך מנהל הפרויקט מטעם היזם עומד בקשר רציף עם חברת הניהול. </span>
+                    </div>
+                </div>
+
+                <div class="row" style="height:40px">
+                </div>
+
+                <div class="input-group input-number-group row">
+                    <div class="input-group-button" onclick="myFunction4()" style="font-family:Arial;font-size:30px;">
+                        <span onmouseover="this.style.background='#6495ED'" onmouseout="this.style.background='#B0C4DE'" class="input-number-increment" style="background-color:#B0C4DE;color:white;border-radius:10px;">+</span>
+                        <span style="background-color:none;color:black;border-radius:10px;font-family:Arial;font-size:30px;-webkit-text-fill-color: white;-webkit-text-stroke: 1.9px black;">אז איך מתחילים?</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div id="myDIV4" style="font-family:Arial;font-size:18px;padding-right:60px;background: linear-gradient(to bottom, rgba(0.3, 0.3, 0.3, 0.3) 100%, #161616 100%);border-radius:10px;">
+                        <span style="background-color:none;color:black;font-family:Arial;font-size:22px;-webkit-text-fill-color: white;-webkit-text-stroke: 1.2px black;">
+                            לאחר התקשרות עם החברה, מתבצעות בדיקות מקדימות לצורך קביעת המאפיינים הייחודים של כל פרויקט ופרויקט, אשר בעזרתם קובעים את השלבים בתהליך ואופן יישומם.
+                            החברה אחראית ללוות את הדיירים מהשלב הראשוני ועד קבלת המפתח.
+                            ובנוסף לכל, מנהלת מו"מ מול היזמים והדיירים ודואגת לבצע את כל השלבים החיוניים בפרויקט מסוג התחדשות עירונית.
+                            לבסוף לאחר בחירת היזם על ידי הדיירים החברה דואגת להחתים את כל בעלי הזכויות על חוזה אחד מול היזם המקובל על כולם.
+                        </span>
+                    </div>
+                </div>
+                <div class="row" style="height:40px">
+                </div>
+                <div class="input-group input-number-group row">
+                    <div class="input-group-button" onclick="myFunction5()" style="font-family:Arial;font-size:30px;">
+                        <span onmouseover="this.style.background = '#6495ED'" onmouseout="this.style.background='#B0C4DE'" class="input-number-increment" style="background-color:#B0C4DE;color:white;border-radius:10px;">+</span>
+                        <span style="background-color:none;color:black;border-radius:10px;font-family:Arial;font-size:30px;-webkit-text-fill-color: white;-webkit-text-stroke: 1.9px black;">למה דווקא אותנו?</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div id="myDIV5" style="font-family:Arial;font-size:18px;padding-right:60px;background: linear-gradient(to bottom, rgba(0.3, 0.3, 0.3, 0.3) 100%, #161616 100%);border-radius:10px;">
+                        <span style="background-color:none;color:black;font-family:Arial;font-size:22px;-webkit-text-fill-color: white;-webkit-text-stroke: 1.2px black;">
+                            כאשר הכרת השוק היא שם המשחק אתם רוצים שחברה מקצועית תוביל אתכם בבטחה בפרויקט בצורה היעילה ביותר ובזמן הקצר ביותר  .
+                            בזכות ניסיוננו העשיר בתחום ההתחדשות העירונית וההכרות העמוקה שלנו עם היזמים בשוק אנו יודעים להבטיח את התמורות הטובות ביותר  הקיימות בפרויקטים מן הסוג זה.
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Signup Section -->
+    <section id="signup" class="signup-section" style="margin-top:-21px;margin-bottom:0px;padding-top:35px">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-lg-8 mx-auto text-center">
+                    <i class="far fa-paper-plane fa-2x mb-2 text-white" style=""></i>
+                    <h2 class="text-white mb-5"style="-webkit-text-fill-color: white;-webkit-text-stroke: 0.5px black;font-size:35px">השאר פרטים ליצירת קשר</h2>
+                    <form method="post" target="_blank">
+                        <div class="row" style="margin-top:-50px;">
+                            <div class="col-md-6 text-center">
+                                <p style="color:white;font-size:26px;font-family:Arial;-webkit-text-fill-color: white;-webkit-text-stroke: 0.5px black;margin-bottom:0px"><b>מייל</b></p>
+                                <input type="email" name="email" id="email" placeholder="דואר אלקטרוני" style="text-align:right;width:100%;height:50%;border-radius:7.5px 7.5px" />
+                            </div>
+                            <div class="col-md-6 text-center">
+                                <p style="color:white;font-size:26px;font-family:Arial;-webkit-text-fill-color: white;-webkit-text-stroke: 0.5px black;margin-bottom:0px"><b>שם מלא</b></p>
+                                <input type="text" name="name" id="name" placeholder="שם מלא" style="text-align:right;width:100%;height:50%;border-radius:7.5px 7.5px" />
+                            </div>
+                        </div>
+                        <div class="row" style="padding-top:23px">
+                            <div class="col-md-12" style="text-align:center">
+                                <p style="color:white;font-size:26px;font-family:Arial;-webkit-text-fill-color: white;-webkit-text-stroke: 0.5px black;margin-bottom:0px"><b>נושא</b></p>
+                                <input type="text" name="subject" id="subject" placeholder="נושא" style="text-align:right;width:100%;height:50%;border-radius:7.5px 7.5px" />
+                            </div>
+                        </div>
+                        <div class="row" style="padding-top:30px">
+                            <div class="col-md-12">
+                                <p style="color:white;font-size:26px;font-family:Arial;-webkit-text-fill-color: white;-webkit-text-stroke: 0.5px black;margin-bottom:0px"><b>תוכן ההודעה</b></p>
+                                <textarea name="text" id="message" placeholder="תוכן ההודעה" style="text-align:right;width:100%;height:90%;border-radius:7.5px 7.5px"></textarea>
+                            </div>
+                        </div>
+                        <div class="row" style="padding-top:25px">
+                            <div class="col-md-12 col-xs-12 text-center">
+                                <br />
+                                <button style="width:30%;height:70%;font-size:25px" onclick="sendMail();">
+                                    <script type="text/javascript">
+                                        function sendMail() {
+                                            var yourMessage = document.getElementById("message").value;
+                                            var subject = document.getElementById("subject").value;
+                                            document.location.href = "raviv.realestate@gmail.com?subject="
+                                                + encodeURIComponent(subject)
+                                                + "&body=" + encodeURIComponent(yourMessage);
+
+                                        }
+                                    </script>
+                                    <b>שלח</b>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section -->
+    <section class="contact-section bg-black" style="margin-top:-30px">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mb-3 mb-md-0">
+                    <div class="card py-4 h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-envelope text-primary mb-2"></i>
+                            <h4 class="text-uppercase m-0">Email</h4>
+                            <hr class="my-4">
+                            <div class="small text-black-50">
+                                <a href="#">raviv.realestate@gmail.com</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-3 mb-md-0">
+                    <div class="card py-4 h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-mobile-alt text-primary mb-2"></i>
+                            <h4 class="text-uppercase m-0">Phone</h4>
+                            <hr class="my-4">
+                            <div class="small text-black-50">+972 (53) 282-0082 </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="bg-black small text-center text-white-50">
+        <div class="container">
+            Copyright &copy; Daniel&Elad 2019
+        </div>
+    </footer>
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <!-- Custom scripts for this template -->
+    <script src="js/grayscale.min.js"></script>
+</body>
+
+</html>
+

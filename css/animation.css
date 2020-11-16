@@ -1,0 +1,153 @@
+﻿/*/*@import "../../../atlanta/assets/css/rtl.min.css";
+
+/* Your CSS code goes here
+-------------------------------------- */
+/*-----------Project-----------*/
+.effect-layla {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 2.5%;
+    text-align: center;
+    @import url('file:///D:\שנה ב\סמסטר א\פיתוח מערכות אינטרנט צד לקוח\moshearviv_updated2\shlomoraviv\css\templatemo_style.css');
+    cursor: pointer;
+    height: auto;
+    background: #F8F8FF;
+    height: 300px;
+    width: 100%;
+    direction: rtl;
+    line-height:10px;
+}
+
+    .effect-layla figcaption {
+        padding-left: 4em;
+        padding-right: 4em;
+        backface-visibility: hidden;
+    }
+    .effect-layla img {
+        width: 100%;
+        height: 100%;
+        background: #F8F8FF;
+    }
+figcaption, figcaption a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.effect-layla figcaption::before {
+    border-radius:10px;
+    top: 50px;
+    right: 30px;
+    bottom: 50px;
+    left: 30px;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    -webkit-transform: scale(0,1);
+    transform: scale(0,1);
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    background: linear-gradient(to bottom, rgba(249,252,247,1) 0%,rgba(245,249,240,0.86) 29%,rgba(245,249,240,0.73) 56%,rgba(245,249,240,0.7) 61%);
+}
+
+.effect-layla figcaption::before, .effect-layla figcaption::after {
+    position: absolute;
+    content: '';
+    opacity: 0;
+}
+
+figcaption::before, figcaption::after {
+    pointer-events: none;
+}
+
+.effect-layla figcaption::before, .effect-layla figcaption::after, .effect-layla h4, .effect-layla h3{
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+}
+
+.effect-layla img {
+    transition: opacity 0.35s;
+}
+
+.effect-layla:hover figcaption::before, .effect-layla:hover figcaption::after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+.effect-layla:hover figcaption::after, .effect-layla:hover h3, .effect-layla:hover h4, .effect-layla:hover img{
+    -webkit-transition-delay: 0.15s;
+    transition-delay: 0.15s;
+}
+
+.effect-layla:hover img {
+    opacity: 0.4;
+    transition: opacity 0.35s;
+}
+
+.effect-layla:hover h3, .effect-layla:hover h4 {
+    opacity: 1;
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+
+.effect-layla h3 {
+    -webkit-transform: translate3d(0,30px,0);
+    transform: translate3d(0,30px,0);
+    padding-top: 15%;
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+    font-size: 1.46vw;
+}
+
+.effect-layla h4 {
+    padding: 0.5em 2em;
+    text-transform: none;
+    opacity: 0;
+    -webkit-transform: translate3d(0,-10px,0);
+    transform: translate3d(0,-10px,0);
+}
+
+.effect-layla figcaption::after {
+    top: 30px;
+    right: 50px;
+    bottom: 30px;
+    left: 50px;
+    border-right: 1px solid #fff;
+    border-left: 1px solid #fff;
+    -webkit-transform: scale(1,0);
+    transform: scale(1,0);
+    -webkit-transform-origin: 100% 0;
+    transform-origin: 100% 0;
+}
+
+.single-service .effect-layla figcaption::after {
+    top: 10px;
+    right: 20px;
+    bottom: 10px;
+    left: 20px;
+}
+
+.single-service .effect-layla figcaption::before {
+    top: 20px;
+    right: 10px;
+    bottom: 20px;
+    left: 10px;
+}
+
+.single-service .effect-layla h3 h2 {
+    font-size: 0vw;
+}
+
+.effect-layla h3 {
+    color: black;
+    opacity: 0;
+}
+.effect-layla h2 {
+    color: #fff;
+    opacity: 0;
+}
+
+
+
